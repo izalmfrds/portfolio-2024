@@ -22,12 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NextUIProvider>
-          <NextThemesProvider
-            attribute="class"
-            defaultTheme="dark">
-            <div className="flex flex-wrap h-screen p-6">
-              {/* <Sidebar /> */}
-              <div className="flex-1  w-full h-full">{children}</div>
+          <NextThemesProvider attribute="class" defaultTheme="dark">
+            <div className="flex flex-wrap h-full p-6">
+              <Sidebar />
+              <div className="flex-1 w-full h-full ml-64">{children}</div>
             </div>
           </NextThemesProvider>
         </NextUIProvider>

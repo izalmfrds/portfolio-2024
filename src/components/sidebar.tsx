@@ -7,6 +7,9 @@ import { SunIcon } from "../Assets/Icon/SunIcon";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import HomeIcon from "@/Assets/Icon/Home";
+import ProjectIcon from "@/Assets/Icon/Project";
+import MoreIcon from "@/Assets/Icon/More";
 
 export function Sidebar() {
   // Function Switch Dark Mode
@@ -52,7 +55,8 @@ export function Sidebar() {
   return (
     <Card
       className=" border-[0.5px] rounded-2xl justify-beetween-center w-64 fixed"
-      style={{ height: "calc(100vh - 48px)" }}>
+      style={{ height: "calc(100vh - 48px)" }}
+    >
       <div className="flex flex-col gap-2 h-28 p-4  items-center justify-center border-b-[0.5px]">
         <Avatar
           isBordered
@@ -68,24 +72,27 @@ export function Sidebar() {
           color={pathname === "/home" ? "primary" : "default"}
           variant={pathname === "/home" ? "solid" : "light"}
           className={`gap-2 justify-start ${textColor("/home")}`}
-          onClick={() => handleNavigation("/home")}>
-          <VideoIcon />
+          onClick={() => handleNavigation("/home")}
+        >
+          <HomeIcon />
           Home
         </Button>
         <Button
           color={pathname === "/project" ? "primary" : "default"}
           variant={pathname === "/project" ? "solid" : "light"}
           className={`gap-2 justify-start ${textColor("/home")}`}
-          onClick={() => handleNavigation("/project")}>
-          <VideoIcon />
+          onClick={() => handleNavigation("/project")}
+        >
+          <ProjectIcon />
           Project
         </Button>
         <Button
           color={pathname === "/more" ? "primary" : "default"}
           variant={pathname === "/more" ? "solid" : "light"}
           className={`gap-2 justify-start ${textColor("/home")}`}
-          onClick={() => handleNavigation("/more")}>
-          <VideoIcon />
+          onClick={() => handleNavigation("/more")}
+        >
+          <MoreIcon />
           More
         </Button>
       </div>
@@ -98,7 +105,8 @@ export function Sidebar() {
           size="lg"
           color="success"
           startContent={<SunIcon />}
-          endContent={<MoonIcon />}>
+          endContent={<MoonIcon />}
+        >
           Dark mode
         </Switch>
       </div>

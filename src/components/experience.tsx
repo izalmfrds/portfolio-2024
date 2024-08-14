@@ -1,203 +1,102 @@
-import { Button } from "@nextui-org/button";
-import { Card, CardBody, CardFooter } from "@nextui-org/card";
+import { Card, CardHeader, CardFooter } from "@nextui-org/card";
+import TelkomLogo from "@/Assets/Image/TelkomFoundationLogo.png";
+import CemindoLogo from "@/Assets/Image/cemindologo.png";
+import IflabsLogo from "@/Assets/Image/iflabs logo.png";
 import Image from "next/image";
-import Peopleui from "@/Assets/Image/peopleui.png";
-import Neobrutalism from "@/Assets/Image/Neobrutalism.png";
-import Peop from "@/Assets/Image/peop.png";
-// import Neobrutalism from "../../Assets/Image/Neobrutalism.png";
-// import Finary from "../../Assets/Image/Finary.png";
 
-export default function experience() {
+function experience() {
   return (
-    <div className=" w-full h-screen pl-6 gap-10">
-      <div className="flex-col space-y-40">
-        <div className="flex flex-row">
-          <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
-            Project
-          </p>
-          <Image
-            src={""}
-            width={500}
-            height={500}
-            alt="Picture of the author"
-            className="absolute  z-1 end-8 bottom-[-650px] w-auto"
-          />
-        </div>
-        <Card className=" p-6 bg-[#252525]">
-          <p className="font-semibold text-2xl">UI/UX Designer</p>
-          <div className="flex flex-col sm:flex-row w-full place-items-center gap-4 mb-6">
-            <p className="grow align-middle ">Let's see another project </p>
-            <Button className="font-semibold">See More</Button>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {/* 1 */}
-            <Card className="p-6 relative shadow-small  flex items-center justify-center group gap-6 transition-colors duration-300 ease-in-out hover:bg-[#343434]">
-              <CardBody className="rounded-lg relative flex items-center justify-center overflow-hidden">
-                <Image
-                  src={Neobrutalism}
-                  height={200}
-                  alt="Picture of the author"
-                  className="object-cover"
-                />
-                {/* Overlay with text */}
-                <div className="absolute inset-0 bg-[#F6E122] flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-                  <p className="text-black text-xl font-bold">
-                    Logo/Nama Aplikasi
-                  </p>
-                </div>
-              </CardBody>
-              <CardFooter className="flex-col gap-2 items-start">
-                <div className="flex gap-4 w-full">
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX Design
-                  </small>
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX
-                  </small>
-                </div>
+    <div className="pt-20 space-y-6">
+      <div className="space-y-2">
+        <p className="text-6xl font-bold">Work Experience</p>
+        <p className="text-base text-[#d1d1d1]">
+          I am actively involved in organizing various projects, especially in
+          UI/UX design with over a year of experience, and I have been involved
+          in UI/UX design in project-based application development and
+          research-based application development, so that I can adapt faster and
+          better to software application development tasks and work environment.
+        </p>
+      </div>
 
-                <h1 className="w-full text-3xl pt-6">FINARY APP</h1>
-                <small className="text-[#c0c0c0] indent-4 ">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  dolorem eos commodi a vitae earum magni expedita error,
-                  pariatur mollitia id, officia maxime iure saepe quidem omnis
-                  dolor tenetur et!
-                </small>
-                <Button
-                  variant="solid"
-                  color="primary"
-                  className="mt-6">
-                  See More
-                </Button>
-              </CardFooter>
-              {/* 2 */}
-            </Card>
-            {/* 2 */}
-            <Card className="p-6 relative shadow-small  flex items-center justify-center group gap-6 transition-colors duration-300 ease-in-out hover:bg-[#343434]">
-              <CardBody className="rounded-lg relative flex items-center justify-center overflow-hidden">
-                <Image
-                  src={Neobrutalism}
-                  height={200}
-                  alt="Picture of the author"
-                  className="object-cover"
-                />
-                {/* Overlay with text */}
-                <div className="absolute inset-0 bg-[#F6E122] flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-                  <p className="text-black text-xl font-bold">
-                    Logo/Nama Aplikasi
-                  </p>
-                </div>
-              </CardBody>
-              <CardFooter className="flex-col gap-2 items-start">
-                <div className="flex gap-4 w-full">
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX Design
-                  </small>
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX
-                  </small>
-                </div>
+      {/* Company */}
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        {/* 1 */}
+        <Card className="p-4 border-white w-full">
+          <CardHeader className="gap-4 flex flex-col justify-start">
+            <div className="flex flex-row gap-4">
+              <Image
+                src={TelkomLogo}
+                alt="Picture of the author"
+                className="w-[48px] h-[48px]"
+              />
+              <div className="flex flex-col gap-1">
+                <p className="text-xl font-semibold">Telkom Foundation</p>
+                <p className="text-xs font-normal text-[#d1d1d1]">
+                  Bandung, Indonesia
+                </p>
+              </div>
+            </div>
+            <div className="gap-0 w-full">
+              <p className="text-xl font-medium w-full">UI/UX Designer</p>
+              <p className="text-sm font-medium w-full text-[#d1d1d1]">
+                Feb, 2024 - Now
+              </p>
+            </div>
+          </CardHeader>
+        </Card>
 
-                <h1 className="w-full text-3xl pt-6">FINARY APP</h1>
-                <small className="text-[#c0c0c0] indent-4 ">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  dolorem eos commodi a vitae earum magni expedita error,
-                  pariatur mollitia id, officia maxime iure saepe quidem omnis
-                  dolor tenetur et!
-                </small>
-                <Button
-                  variant="solid"
-                  color="primary"
-                  className="mt-6">
-                  See More
-                </Button>
-              </CardFooter>
-            </Card>
-            {/* 3 */}
-            <Card className="p-6 relative shadow-small  flex items-center justify-center group gap-6 transition-colors duration-300 ease-in-out hover:bg-[#343434]">
-              <CardBody className="rounded-lg relative flex items-center justify-center overflow-hidden">
-                <Image
-                  src={Neobrutalism}
-                  height={200}
-                  alt="Picture of the author"
-                  className="object-cover"
-                />
-                {/* Overlay with text */}
-                <div className="absolute inset-0 bg-[#F6E122] flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-                  <p className="text-black text-xl font-bold">
-                    Logo/Nama Aplikasi
-                  </p>
-                </div>
-              </CardBody>
-              <CardFooter className="flex-col gap-2 items-start">
-                <div className="flex gap-4 w-full">
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX Design
-                  </small>
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX
-                  </small>
-                </div>
+        {/* 2 */}
+        <Card className="p-4 border-white w-full">
+          <CardHeader className="gap-4 flex flex-col">
+            <div className="flex flex-row gap-4">
+              <Image
+                src={CemindoLogo}
+                alt="Picture of the author"
+                className="w-[48px] h-[48px]"
+              />
+              <div className="flex flex-col gap-1">
+                <p className="text-xl font-semibold">PT Cemindo Gemilang</p>
+                <p className="text-xs font-normal text-[#d1d1d1]">
+                  Banten, Indonesia
+                </p>
+              </div>
+            </div>
+            <div className="gap-0 w-full">
+              <p className="text-xl font-medium w-full">UI/UX Designer</p>
+              <p className="text-sm font-medium w-full text-[#d1d1d1]">
+                Feb, 2024 - Now
+              </p>
+            </div>
+          </CardHeader>
+        </Card>
 
-                <h1 className="w-full text-3xl pt-6">FINARY APP</h1>
-                <small className="text-[#c0c0c0] indent-4 ">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  dolorem eos commodi a vitae earum magni expedita error,
-                  pariatur mollitia id, officia maxime iure saepe quidem omnis
-                  dolor tenetur et!
-                </small>
-                <Button
-                  variant="solid"
-                  color="primary"
-                  className="mt-6">
-                  See More
-                </Button>
-              </CardFooter>
-            </Card>
-            {/* 4 */}
-            <Card className="p-6 relative shadow-small  flex items-center justify-center group gap-6 transition-colors duration-300 ease-in-out hover:bg-[#343434]">
-              <CardBody className="rounded-lg relative flex items-center justify-center overflow-hidden">
-                <Image
-                  src={Neobrutalism}
-                  height={200}
-                  alt="Picture of the author"
-                  className="object-cover"
-                />
-                {/* Overlay with text */}
-                <div className="absolute inset-0 bg-[#F6E122] flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-                  <p className="text-black text-xl font-bold">
-                    Logo/Nama Aplikasi
-                  </p>
-                </div>
-              </CardBody>
-              <CardFooter className="flex-col gap-2 items-start">
-                <div className="flex gap-4 w-full">
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX Design
-                  </small>
-                  <small className="p-1 px-2 border rounded-xl text-small bg-slate-200 bg-opacity-20">
-                    UI/UX
-                  </small>
-                </div>
-
-                <h1 className="w-full text-3xl pt-6">FINARY APP</h1>
-                <small className="text-[#c0c0c0] indent-4 ">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  dolorem eos commodi a vitae earum magni expedita error,
-                  pariatur mollitia id, officia maxime iure saepe quidem omnis
-                  dolor tenetur et!
-                </small>
-                <Button
-                  variant="solid"
-                  color="primary"
-                  className="mt-6">
-                  See More
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
+        {/* 3 */}
+        <Card className="p-4 border-white w-full">
+          <CardHeader className="gap-4 flex flex-col">
+            <div className="flex flex-row gap-4">
+              <Image
+                src={IflabsLogo}
+                alt="Picture of the author"
+                className="w-[48px] h-[48px]"
+              />
+              <div className="flex flex-col gap-1">
+                <p className="text-xl font-semibold">Informatics Laboratory</p>
+                <p className="text-xs font-normal text-[#d1d1d1]">
+                  Bandung, Indonesia
+                </p>
+              </div>
+            </div>
+            <div className="gap-0 w-full">
+              <p className="text-xl font-medium w-full">UI/UX Designer</p>
+              <p className="text-sm font-medium w-full text-[#d1d1d1]">
+                Feb, 2024 - Now
+              </p>
+            </div>
+          </CardHeader>
         </Card>
       </div>
     </div>
   );
 }
+
+export default experience;
