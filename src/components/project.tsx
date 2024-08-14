@@ -15,7 +15,7 @@ export default function project() {
       <div className="flex-col sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <div className="grid grid-rows sm:grid-cols-1 ">
           <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
-            Project
+            Selected Project
           </p>
           <Image
             src={Peopleui}

@@ -8,7 +8,9 @@ function experience() {
   return (
     <div className="pt-20 space-y-6">
       <div className="space-y-2">
-        <p className="text-6xl font-bold">Work Experience</p>
+        <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
+          Work Experience
+        </p>
         <p className="text-base text-[#d1d1d1]">
           I am actively involved in organizing various projects, especially in
           UI/UX design with over a year of experience, and I have been involved
@@ -23,7 +25,7 @@ function experience() {
         {/* 1 */}
         <Card className="p-4 border-white w-full">
           <CardHeader className="gap-4 flex flex-col justify-start">
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 w-full">
               <Image
                 src={TelkomLogo}
                 alt="Picture of the author"
@@ -48,7 +50,7 @@ function experience() {
         {/* 2 */}
         <Card className="p-4 border-white w-full">
           <CardHeader className="gap-4 flex flex-col">
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 w-full">
               <Image
                 src={CemindoLogo}
                 alt="Picture of the author"
@@ -73,7 +75,7 @@ function experience() {
         {/* 3 */}
         <Card className="p-4 border-white w-full">
           <CardHeader className="gap-4 flex flex-col">
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 w-full">
               <Image
                 src={IflabsLogo}
                 alt="Picture of the author"

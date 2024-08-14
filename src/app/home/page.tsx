@@ -42,7 +42,9 @@ export default function Home() {
       {/* About Me */}
       <div className="grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
         <div className="content-center space-y-4 p-6 my-auto">
-          <p className="text-6xl font-bold  ">About Me</p>
+          <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
+            About Me
+          </p>
           <p className="text-base text-[#d1d1d1]  ">
             Hi there! 👋 <br />
             My name is Rizal Maidan Firdaus, someone who has interest and
@@ -60,9 +62,8 @@ export default function Home() {
         <div className="flex justify-center p-6 w-full items-end">
           <Image
             src={Aboutme}
-            width={500}
-            height={500}
             alt="Picture of the author"
+            className="w-[430px]"
           />
         </div>
       </div>
