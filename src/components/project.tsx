@@ -25,7 +25,7 @@ export default function project() {
             className="absolute z-1 end-8 top-28 w-60"
           />
         </div>
-        <Card className=" p-6 bg-[#252525]">
+        <Card className=" p-6">
           <p className="font-semibold text-2xl">UI/UX Designer</p>
           <div className="flex flex-col sm:flex-row w-full place-items-center gap-4 pb-6 ">
             <p className="grow align-middle ">Let's see another project </p>

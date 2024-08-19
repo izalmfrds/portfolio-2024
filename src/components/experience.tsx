@@ -8,7 +8,7 @@ function experience() {
   return (
     <div className="pt-20 space-y-6">
       <div className="space-y-2">
-        <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
+        <p className="text-5xl font-semibold pb-6 grow font-mono mt-32">
           Work Experience
         </p>
         <p className="text-base text-[#d1d1d1]">

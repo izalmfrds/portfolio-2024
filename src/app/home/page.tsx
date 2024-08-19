@@ -1,3 +1,4 @@
+"use client";
 import Spline from "@splinetool/react-spline";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
@@ -6,6 +7,15 @@ import Experience from "@/components/experience";
 import Aboutme from "@/Assets/Image/Aboutme.png";
 import DownloadIcon from "@/Assets/Icon/Download";
 import Gmail from "@/Assets/Icon/Gmail";
+import Planet from "@/Assets/Image/planet.png";
+import Planet1 from "@/Assets/Image/Planet-9.png";
+import Planet2 from "@/Assets/Image/Planet-8.png";
+import Planet3 from "@/Assets/Image/Planet-13.png";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import particles from "@/components/particles";
+import Particle from "@/components/particles";
 
 export default function Home() {
   return (
@@ -41,7 +51,7 @@ export default function Home() {
       {/* End Hero */}
       {/* About Me */}
       <div className="grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
-        <div className="content-center space-y-4 p-6 my-auto">
+        <div className="content-center space-y-4  my-auto">
           <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
             About Me
           </p>
@@ -67,14 +77,63 @@ export default function Home() {
           />
         </div>
       </div>
+      {/* End About Me */}
+
       {/* Experience */}
       <Experience />
       {/* End Experience */}
 
-      {/* End About Me */}
       {/* Selected Project */}
       <Project />
       {/* End Selected Project */}
+
+      {/* Contact */}
+      <div className="h-screen justify-center items-center content-center ">
+        <div className="grid grid-cols-3 mt-10">
+          <div className="flex justify-center">
+            {/* <Image src={Planet1} alt="planet" className="w-[100px]" /> */}
+          </div>
+          <div className="flex justify-center">
+            <Image src={Planet} alt="planet" className="w-[100px]" />
+          </div>
+          <div className="flex justify-center">
+            {/* <Image src={Planet3} alt="planet" className="w-[100px]" /> */}
+          </div>
+        </div>
+
+        <div className="text-center">
+          <p className="text-5xl font-semibold pb-2 grow font-mono mt-20">
+            Let’s get to work
+          </p>
+          <p>
+            We’re ready to get started on your next creative project. All you
+            need to do is hit the button below
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <Button className="mt-10">Talk to Me</Button>
+        </div>
+
+        <div className="flex justify-center mt-10 gap-6">
+          <AiFillInstagram
+            size={34}
+            className="hover:text-[#7d7d7d] cursor-pointer"
+          />
+
+          <AiFillLinkedin
+            size={34}
+            className="hover:text-[#7d7d7d] cursor-pointer"
+          />
+
+          <AiFillGithub
+            size={34}
+            className="hover:text-[#7d7d7d] cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <Particle />
     </div>
   );
 }
