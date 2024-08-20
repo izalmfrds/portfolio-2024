@@ -89,8 +89,12 @@ export default function Home() {
       {/* End Selected Project */}
 
       {/* Contact */}
-      <div className="h-screen justify-center items-center content-center ">
-        <div className="grid grid-cols-3 mt-10">
+      <div className="h-screen justify-center items-center content-center relative ">
+        <Spline
+          scene="https://prod.spline.design/YUN2rBInkhwRaGVX/scene.splinecode"
+          className="absolute z-1"
+        />
+        <div className="grid grid-cols-3 mt-10 z-50">
           <div className="flex justify-center">
             {/* <Image src={Planet1} alt="planet" className="w-[100px]" /> */}
           </div>
@@ -113,7 +117,9 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          <Button className="mt-10">Talk to Me</Button>
+          <Button color="primary" className="mt-10">
+            Talk to Me
+          </Button>
         </div>
 
         <div className="flex justify-center mt-10 gap-6">
