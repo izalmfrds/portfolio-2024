@@ -149,6 +149,9 @@ const Particle = () => {
             move: 10,
           },
         },
+        size: {
+          value: 2.5, // Sesuaikan angka ini untuk mengatur ukuran partikel
+        },
       },
     }),
     []

@@ -16,12 +16,13 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import particles from "@/components/particles";
 import Particle from "@/components/particles";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   return (
     <div className=" w-full pl-6 gap-10 mb-6 h-full ">
       {/* Hero */}
-      <div className="h-screen rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative ">
+      <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative ">
         <Spline
           className="h-screen absolute content-center place-items-center top-48  flex justify-center items-center"
           scene="https://prod.spline.design/Ut6-u4zKMonMrzN2/scene.splinecode"
@@ -132,8 +133,8 @@ export default function Home() {
           />
         </div>
       </div>
-
       <Particle />
+      <SpeedInsights />
     </div>
   );
 }
