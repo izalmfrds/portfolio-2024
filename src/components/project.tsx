@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@nextui-org/button";
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
@@ -6,10 +7,18 @@ import Neobrutalism from "@/Assets/Image/Neobrutalism.png";
 import Peop from "@/Assets/Image/peop.png";
 import BaisMockup from "@/Assets/Image/Bais Mockup.png";
 import DigitsMockup from "@/Assets/Image/Digits Mockup.png";
+import { useRouter } from "next/navigation";
+
 // import Neobrutalism from "../../Assets/Image/Neobrutalism.png";
 // import Finary from "../../Assets/Image/Finary.png";
 
 export default function project() {
+  const router = useRouter();
+
+  const handleProjectClick = () => {
+    router.push("/project"); // Ganti dengan rute halaman yang dituju
+  };
+
   return (
     <div className=" w-full h-full gap-10 relative z-10">
       <div className="flex-col sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
@@ -29,7 +38,9 @@ export default function project() {
           <p className="font-semibold text-2xl">UI/UX Designer</p>
           <div className="flex flex-col sm:flex-row w-full place-items-center gap-4 pb-6 ">
             <p className="grow align-middle ">Let's see another project </p>
-            <Button className="font-semibold">See More</Button>
+            <Button className="font-semibold" onClick={handleProjectClick}>
+              See More
+            </Button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {/* 1 */}

@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className=" w-full pl-6 gap-10 mb-6 h-full ">
       {/* Hero */}
-      <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative ">
+      <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 ">
         <Spline
           className="h-screen absolute content-center place-items-center top-48  flex justify-center items-center"
           scene="https://prod.spline.design/Ut6-u4zKMonMrzN2/scene.splinecode"
@@ -52,7 +52,7 @@ export default function Home() {
       {/* End Hero */}
       {/* About Me */}
       <div className="grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
-        <div className="content-center space-y-4  my-auto">
+        <div className="content-center space-y-4  my-auto z-50">
           <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
             About Me
           </p>
@@ -70,7 +70,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex justify-center p-6 w-full items-end">
+        <div className="flex justify-center p-6 w-full items-end z-50">
           <Image
             src={Aboutme}
             alt="Picture of the author"
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="flex justify-center">
             {/* <Image src={Planet1} alt="planet" className="w-[100px]" /> */}
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center z-50">
             <Image src={Planet} alt="planet" className="w-[100px]" />
           </div>
           <div className="flex justify-center">
@@ -122,20 +122,20 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="flex justify-center mt-10 gap-6">
+        <div className="flex justify-center mt-10 gap-6 ">
           <AiFillInstagram
             size={34}
-            className="hover:text-[#7d7d7d] cursor-pointer"
+            className="hover:text-[#c6c6c6] cursor-pointer z-50"
           />
 
           <AiFillLinkedin
             size={34}
-            className="hover:text-[#7d7d7d] cursor-pointer"
+            className="hover:text-[#c6c6c6] cursor-pointer z-50"
           />
 
           <AiFillGithub
             size={34}
-            className="hover:text-[#7d7d7d] cursor-pointer"
+            className="hover:text-[#c6c6c6] cursor-pointer z-50"
           />
         </div>
       </div>
