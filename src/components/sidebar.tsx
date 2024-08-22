@@ -1,6 +1,7 @@
 "use client";
 
 import { Button, Card, Avatar, Switch } from "@nextui-org/react";
+import { Select } from "@nextui-org/react";
 import { VideoIcon } from "../Assets/Icon/VideoIcon";
 import { MoonIcon } from "../Assets/Icon/MoonIcon";
 import { SunIcon } from "../Assets/Icon/SunIcon";
@@ -67,11 +68,11 @@ export function Sidebar() {
       </div>
 
       {/* Menu */}
-      <div className="flex flex-col gap-2 w-64 h-full p-4 mt-8">
+      <div className="flex flex-col gap-2 w-64 h-full p-4 mt-8 z-50">
         <Button
           color={pathname === "/home" ? "primary" : "default"}
           variant={pathname === "/home" ? "solid" : "light"}
-          className={`gap-2 justify-start ${textColor("/home")}`}
+          className={`gap-2 justify-start ${textColor("/home")}z-50`}
           onClick={() => handleNavigation("/home")}
         >
           <HomeIcon />
@@ -80,7 +81,7 @@ export function Sidebar() {
         <Button
           color={pathname === "/project" ? "primary" : "default"}
           variant={pathname === "/project" ? "solid" : "light"}
-          className={`gap-2 justify-start ${textColor("/home")}`}
+          className={`gap-2 justify-start ${textColor("/home")} z-50`}
           onClick={() => handleNavigation("/project")}
         >
           <ProjectIcon />
@@ -97,7 +98,7 @@ export function Sidebar() {
         </Button>
       </div>
 
-      <div className="h-24 p-4 border-t-[0.5px] place-content-center">
+      <div className="h-24 p-4 border-t-[0.5px] place-content-center z-50">
         <Switch
           checked={theme === "dark"}
           onChange={handleChange}

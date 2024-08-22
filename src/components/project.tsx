@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@nextui-org/button";
-import { Card, CardBody, CardFooter } from "@nextui-org/card";
+import { Card, CardHeader, CardFooter, CardBody } from "@nextui-org/card";
 import Image from "next/image";
 import Peopleui from "@/Assets/Image/peopleui.png";
 import Neobrutalism from "@/Assets/Image/Neobrutalism.png";
@@ -34,6 +34,7 @@ export default function project() {
             className="absolute z-1 end-8 top-28 w-60"
           />
         </div>
+
         <Card className=" p-6">
           <p className="font-semibold text-2xl">UI/UX Designer</p>
           <div className="flex flex-col sm:flex-row w-full place-items-center gap-4 pb-6 ">
@@ -78,7 +79,6 @@ export default function project() {
                   See More
                 </Button> */}
               </CardFooter>
-              {/* 2 */}
             </Card>
             {/* 2 */}
             <Card className="p-6 relative shadow-small  flex items-center justify-center group gap-6 transition-colors duration-300 ease-in-out hover:bg-[#343434]">
