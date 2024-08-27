@@ -14,7 +14,6 @@ import Planet3 from "@/Assets/Image/Planet-13.png";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import particles from "@/components/particles";
 import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 

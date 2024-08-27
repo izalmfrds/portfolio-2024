@@ -1,17 +1,12 @@
 "use client";
 
 import { Tablist } from "../../components/tablist";
-import {
-  Card,
-  CardFooter,
-  Button,
-  CardHeader,
-  CardBody,
-} from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 import Particle from "@/components/particles";
 import DigitsMockup from "@/Assets/Image/Digits Mockup.png";
 import BAIS from "@/Assets/Image/Bais Mockup.png";
 import Finary from "@/Assets/Image/Finary.png";
+import Healty from "@/Assets/Image/Healty.png";
 import DynamicCard from "@/components/card";
 
 export default function Project() {
@@ -59,6 +54,14 @@ export default function Project() {
               className="bg-[#605DEC] text-white"
             />
             {/* 4 */}
+            <DynamicCard
+              imageSrc={Healty}
+              logoTitle="Healty"
+              title="Healty App"
+              description="The health app is an online consultation service application, where patients can consult on health problems via chat, call and video call"
+              badges={["UI/UX Design"]}
+              className="bg-[#605DEC] text-white"
+            />
           </div>
           {/* End Pembungkus Project */}
         </div>

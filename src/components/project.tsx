@@ -9,8 +9,6 @@ import DigitsMockup from "@/Assets/Image/Digits Mockup.png";
 import { useRouter } from "next/navigation";
 import DynamicCard from "@/components/card";
 
-// import Neobrutalism from "../../Assets/Image/Neobrutalism.png";
-// import Finary from "../../Assets/Image/Finary.png";
 
 export default function project() {
   const router = useRouter();
