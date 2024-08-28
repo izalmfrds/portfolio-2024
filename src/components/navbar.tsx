@@ -11,20 +11,20 @@ import { SunIcon } from "@/Assets/Icon/SunIcon";
 
 export default function App() {
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar shouldHideOnScroll className="z-50">
       <NavbarBrand>
         <SunIcon />
-        <p className="font-bold text-inherit">ACME</p>
+        <p className="font-bold text-inherit">Izalmfrds</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
-            Features
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="#" aria-current="page">
-            Customers
+            Project
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -35,12 +35,13 @@ export default function App() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <SunIcon />
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <SunIcon />
+        </NavbarItem>
+        <NavbarItem>
+          <SunIcon />
         </NavbarItem>
       </NavbarContent>
     </Navbar>
