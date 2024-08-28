@@ -5,7 +5,7 @@ import "./globals.css";
 import { NextUIProvider } from "@nextui-org/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { Sidebar } from "../components/sidebar";
-
+import Navbar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,8 +23,9 @@ export default function RootLayout({
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="dark">
             <div className="flex flex-wrap h-full p-6">
-              <Sidebar />
-              <div className="flex-1 w-full h-full ml-64">{children}</div>
+              {/* <Sidebar /> */}
+              <Navbar />
+              <div className="flex-1 w-full h-full ">{children}</div>
             </div>
           </NextThemesProvider>
         </NextUIProvider>

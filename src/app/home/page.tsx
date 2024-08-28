@@ -16,10 +16,11 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className=" w-full pl-6 gap-10 mb-6 h-full ">
+    <div className="w-full h-full gap-10 mb-6 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 max-w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-[80%] mx-auto">
       {/* Hero */}
       <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 ">
         <Spline
