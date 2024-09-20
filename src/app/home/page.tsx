@@ -52,7 +52,6 @@ export default function Home1() {
       {/* End Hero */}
       {/* About Me */}
       <div className="max-w-lg mx-auto grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
-        {/* <div className="max-w-lg  gap-4 h-screen "> */}
         <div className="content-center space-y-4  my-auto z-50 w-[430px]">
           <p className="mono text-6xl font-semibold pb-6 grow mt-52">
             About Me
