@@ -33,11 +33,8 @@ export default function App() {
         <p className="font-bold text-inherit">Izalmfrds</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem isActive={pathname === "/home"}>
-          <Link
-            href="/home"
-            color={pathname === "/home" ? "primary" : "foreground"}
-          >
+        <NavbarItem isActive={pathname === "/"}>
+          <Link href="/" color={pathname === "/" ? "primary" : "foreground"}>
             Home
           </Link>
         </NavbarItem>

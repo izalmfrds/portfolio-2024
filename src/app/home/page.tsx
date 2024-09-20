@@ -18,7 +18,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/navbar";
 
-export default function Home() {
+export default function Home1() {
   return (
     <div className="w-full h-full gap-10 mb-6 px-4 mx-auto">
       {/* Hero */}
