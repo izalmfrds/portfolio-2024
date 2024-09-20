@@ -22,17 +22,17 @@ export default function Home1() {
   return (
     <div className="w-full h-full gap-10 mb-6 px-4 mx-auto">
       {/* Hero */}
-      <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 ">
+      <div className="h-[calc(100vh-150px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 ">
         <Spline
           className="h-screen absolute content-center place-items-center top-48  flex justify-center items-center"
           scene="https://prod.spline.design/Ut6-u4zKMonMrzN2/scene.splinecode"
         />
 
         <div className="pt-10 text-center">
-          <p className="text-6xl font-bold w-full">
+          <p className="tomo font-extrabold text-6xl  w-full">
             Crafting Design <br></br> with User Experience Research
           </p>
-          <p className="text-base mt-4 text-[#d1d1d1]">
+          <p className="text-base mt-4 text-[#d1d1d1] font-tomorrow ">
             This website contains details about my explorations, and my work
             experience. <br></br> Hopefully it can give you the insight and
             information you need!
@@ -42,7 +42,7 @@ export default function Home1() {
             <Button color="primary">
               Download CV <DownloadIcon />
             </Button>
-            <Button variant="bordered" className="text-hite border-[#d1d1d1]">
+            <Button variant="bordered" className="text-white border-[#d1d1d1]">
               Send Email
               <Gmail />
             </Button>
@@ -51,9 +51,10 @@ export default function Home1() {
       </div>
       {/* End Hero */}
       {/* About Me */}
-      <div className="grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
-        <div className="content-center space-y-4  my-auto z-50">
-          <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
+      <div className="max-w-lg mx-auto grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
+        {/* <div className="max-w-lg  gap-4 h-screen "> */}
+        <div className="content-center space-y-4  my-auto z-50 w-[430px]">
+          <p className="mono text-6xl font-semibold pb-6 grow mt-52">
             About Me
           </p>
           <p className="text-base text-[#d1d1d1]  ">
@@ -70,7 +71,7 @@ export default function Home1() {
           </p>
         </div>
 
-        <div className="flex justify-center p-6 w-full items-end z-50">
+        <div className="flex justify-end p-6 w-full items-end z-50">
           <Image
             src={Aboutme}
             alt="Picture of the author"

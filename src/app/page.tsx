@@ -29,7 +29,7 @@ export default function Home() {
         />
 
         <div className="pt-10 text-center">
-          <p className="text-6xl font-bold w-full">
+          <p className="text-6xl w-full font-tomorrow">
             Crafting Design <br></br> with User Experience Research
           </p>
           <p className="text-base mt-4 text-[#d1d1d1]">
@@ -53,7 +53,7 @@ export default function Home() {
       {/* About Me */}
       <div className="grid grid-cols-reverse sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 h-screen ">
         <div className="content-center space-y-4  my-auto z-50">
-          <p className="text-5xl font-semibold pb-6 grow font-mono mt-52">
+          <p className="tomo text-5xl font-semibold pb-6 grow mt-52">
             About Me
           </p>
           <p className="text-base text-[#d1d1d1]  ">
