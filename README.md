@@ -1,2 +1,3 @@
 # portfolio-2024
- - Next JS, Next UI, Splibe
+Tech stack:
+ - Next JS, Next UI, Spline
