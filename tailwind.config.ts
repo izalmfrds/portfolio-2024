@@ -12,6 +12,17 @@ module.exports = {
       fontFamily: {
         tomorrow: ['"Tomorrow"', "sans-serif"],
       },
+      animation: {
+        pulseAnimate: "pulseAnimate 4s ease-out infinite",
+      },
+      keyframes: {
+        pulseAnimate: {
+          "100%": {
+            opacity: "0",
+            transform: "scale(2)",
+          },
+        },
+      },
     },
   },
   darkMode: "class",

@@ -14,7 +14,6 @@
 
 .tomo {
   font-family: tomorrow;
-  font-size: 4rem;
 }
 .dark body {
   @apply bg-[#000];

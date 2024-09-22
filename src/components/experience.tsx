@@ -6,9 +6,9 @@ import Image from "next/image";
 
 function experience() {
   return (
-    <div className="pt-20 space-y-6 z-50">
-      <div className="space-y-2">
-        <p className="tomo text-5xl font-semibold pb-6 grow mt-32 z-50">
+    <div className="max-w-6xl mx-auto py-20 space-y-6 z-50 ">
+      <div className="space-y-2  text-center ">
+        <p className="tomo text-4xl font-semibold pb-6 grow mt-32 z-50 ">
           Work Experience
         </p>
         <p className="text-base text-[#d1d1d1]">
