@@ -4,7 +4,7 @@ import { Tablist } from "../../components/tablist";
 import { Card } from "@nextui-org/react";
 import Particle from "@/components/particles";
 import DigitsMockup from "@/Assets/Image/Digits Mockup.png";
-import BAIS from "@/Assets/Image/Bais Mockup.png";
+import BAIS from "@/Assets/Image/BaisMockup.png";
 import Finary from "@/Assets/Image/Finary.png";
 import Healty from "@/Assets/Image/Healty.png";
 import DynamicCard from "@/components/card";
