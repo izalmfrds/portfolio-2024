@@ -35,10 +35,22 @@ export default function Home() {
         >
           {" "}
           {/* Creating multiple spans with varying delays */}
-          <span className="pulse" style={{ "--i": 0 }}></span>
-          <span className="pulse" style={{ "--i": 1 }}></span>
-          <span className="pulse" style={{ "--i": 2 }}></span>
-          <span className="pulse" style={{ "--i": 3 }}></span>
+          <span
+            className="pulse"
+            style={{ "--i": 0 } as React.CSSProperties}
+          ></span>
+          <span
+            className="pulse"
+            style={{ "--i": 1 } as React.CSSProperties}
+          ></span>
+          <span
+            className="pulse"
+            style={{ "--i": 2 } as React.CSSProperties}
+          ></span>
+          <span
+            className="pulse"
+            style={{ "--i": 3 } as React.CSSProperties}
+          ></span>
           <style jsx>{`
             .relative {
               position: relative;
