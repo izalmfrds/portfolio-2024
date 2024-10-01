@@ -10,6 +10,9 @@ import {
 } from "@nextui-org/react";
 import { SunIcon } from "@/Assets/Icon/SunIcon";
 import { useRouter, usePathname } from "next/navigation";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function App() {
   const [mounted, setMounted] = useState(false);
@@ -57,13 +60,22 @@ export default function App() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <SunIcon />
+          <AiFillInstagram
+            size={24}
+            className="hover:text-[#c6c6c6] cursor-pointer z-50"
+          />
         </NavbarItem>
         <NavbarItem>
-          <SunIcon />
+          <AiFillLinkedin
+            size={24}
+            className="hover:text-[#c6c6c6] cursor-pointer z-50"
+          />
         </NavbarItem>
         <NavbarItem>
-          <SunIcon />
+          <AiFillGithub
+            size={24}
+            className="hover:text-[#c6c6c6] cursor-pointer z-50"
+          />
         </NavbarItem>
       </NavbarContent>
     </Navbar>

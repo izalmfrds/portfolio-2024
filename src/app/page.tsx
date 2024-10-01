@@ -6,6 +6,7 @@ import Project from "@/components/project";
 import Experience from "@/components/experience";
 import Aboutme from "@/Assets/Image/Aboutme.png";
 import DownloadIcon from "@/Assets/Icon/Download";
+import LeftIcon from "@/Assets//Icon/Arrow";
 import Gmail from "@/Assets/Icon/Gmail";
 import Planet from "@/Assets/Image/planet.png";
 import Planet1 from "@/Assets/Image/Planet-9.png";
@@ -135,7 +136,7 @@ export default function Home() {
           <Image
             src={Aboutme}
             alt="Picture of the author"
-            className="w-[430px]"
+            className="w-full max-w-[180px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] object-contain"
           />
         </div>
       </div>
@@ -156,14 +157,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-cols-3 gap-6 mt-6 justify-center items-center">
-          <div className="w-full  border-2 border-white rounded-md">
+        <div className="flex flex-wrap gap-6 mt-6 justify-center items-center sm:flex-cols-1 md:flex-cols-2 lg:flex-cols-3">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-1/3s border-2 border-white rounded-md">
             <Image src={Best1} alt="best1" className=" " />
           </div>
-          <div className="w-full  border-2 border-white rounded-md">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 border-2 border-white rounded-md">
             <Image src={Best1} alt="best2" className=" " />
           </div>
-          <div className="w-full border-2 border-white rounded-md">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 border-2 border-white rounded-md">
             <Image src={Best3} alt="best3" className=" " />
           </div>
         </div>
@@ -171,7 +172,7 @@ export default function Home() {
         <div className="flex gap-4 mt-6 justify-center">
           <Button variant="light" className="text-hite border-[#d1d1d1]">
             See All Project
-            <Gmail />
+            <LeftIcon />
           </Button>
         </div>
       </div>
