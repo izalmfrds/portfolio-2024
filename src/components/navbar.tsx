@@ -61,20 +61,29 @@ export default function App() {
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <AiFillInstagram
-            size={24}
+            size={34}
             className="hover:text-[#c6c6c6] cursor-pointer z-50"
+            onClick={() =>
+              window.open("https://www.instagram.com/izalmfrds", "izalmfrds")
+            }
           />
         </NavbarItem>
         <NavbarItem>
           <AiFillLinkedin
-            size={24}
+            size={34}
             className="hover:text-[#c6c6c6] cursor-pointer z-50"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/izalmfrds", "izalmfrds")
+            }
           />
         </NavbarItem>
         <NavbarItem>
           <AiFillGithub
-            size={24}
+            size={34}
             className="hover:text-[#c6c6c6] cursor-pointer z-50"
+            onClick={() =>
+              window.open("https://github.com/izalmfrds", "izalmfrds")
+            }
           />
         </NavbarItem>
       </NavbarContent>

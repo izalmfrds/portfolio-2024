@@ -14,16 +14,22 @@ import Planet2 from "@/Assets/Image/Planet-8.png";
 import Planet3 from "@/Assets/Image/Planet-13.png";
 import Comet from "@/Assets/Image/Comet.png";
 import Best1 from "@/Assets/Image/best1.png";
-import Best2 from "@/Assets/Image/BaisMockup.png";
+import Best2 from "@/Assets/Image/best2.png";
 import Best3 from "@/Assets/Image/best3.png";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 // import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Navbar from "@/components/navbar";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  // const router = useRouter();
+
+  // const Project = () => {
+  //   router.push("/project"); // Mengarahkan pengguna ke halaman /project
+  // };
+
   return (
     <div className="w-full h-full gap-10 mb-6 px-4 mx-auto">
       {/* Hero */}
@@ -100,10 +106,27 @@ export default function Home() {
           </p>
 
           <div className="flex gap-4 mt-6 justify-center">
-            <Button color="primary">
+            <Button
+              color="primary"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/10yMNt46Ojl5-oDDIfQXrQh0gJN3k-CR3/view?usp=sharing",
+                  "_blank"
+                )
+              }
+            >
               Download CV <DownloadIcon />
             </Button>
-            <Button variant="bordered" className="text-hite border-[#d1d1d1]">
+            <Button
+              variant="bordered"
+              className="text-white border-[#d1d1d1]"
+              onClick={() =>
+                window.open(
+                  "https://mail.google.com/mail/?view=cm&fs=1&to=izalmfrds@gmail.com",
+                  "_blank"
+                )
+              }
+            >
               Send Email
               <Gmail />
             </Button>
@@ -158,19 +181,27 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap gap-6 mt-6 justify-center items-center sm:flex-cols-1 md:flex-cols-2 lg:flex-cols-3">
-          <div className="w-full sm:w-full md:w-1/3 lg:w-1/3s border-2 border-white rounded-md">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md">
             <Image src={Best1} alt="best1" className=" " />
+            <div className="flex flex-row gap-6">
+              <div>link</div>
+              <div>View Website</div>
+            </div>
           </div>
-          <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 border-2 border-white rounded-md">
-            <Image src={Best1} alt="best2" className=" " />
+          <div className="w-full sm:w-full md:w-1/3 lg:w-full border-2 border-white rounded-md">
+            <Image src={Best2} alt="best2" className=" " />
           </div>
-          <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 border-2 border-white rounded-md">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-full border-2 border-white rounded-md">
             <Image src={Best3} alt="best3" className=" " />
           </div>
         </div>
 
         <div className="flex gap-4 mt-6 justify-center">
-          <Button variant="light" className="text-hite border-[#d1d1d1]">
+          <Button
+            variant="light"
+            onClick={() => (window.location.href = "/project")} // Langsung menggunakan window.location
+            className="text-white border-[#d1d1d1]"
+          >
             See All Project
             <LeftIcon />
           </Button>
@@ -217,16 +248,25 @@ export default function Home() {
           <AiFillInstagram
             size={34}
             className="hover:text-[#c6c6c6] cursor-pointer z-50"
+            onClick={() =>
+              window.open("https://www.instagram.com/izalmfrds", "izalmfrds")
+            }
           />
 
           <AiFillLinkedin
             size={34}
             className="hover:text-[#c6c6c6] cursor-pointer z-50"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/izalmfrds", "izalmfrds")
+            }
           />
 
           <AiFillGithub
             size={34}
             className="hover:text-[#c6c6c6] cursor-pointer z-50"
+            onClick={() =>
+              window.open("https://github.com/izalmfrds", "izalmfrds")
+            }
           />
         </div>
       </div>
