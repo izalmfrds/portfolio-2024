@@ -30,7 +30,7 @@ export default function App() {
   };
 
   return (
-    <Navbar className="z-[100]">
+    <Navbar shouldHideOnScroll className="z-[100]">
       <NavbarBrand>
         <SunIcon />
         <p className="font-bold text-inherit">Izalmfrds</p>

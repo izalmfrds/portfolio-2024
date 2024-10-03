@@ -8,7 +8,7 @@ import Best2 from "@/Assets/Image/best2.png";
 import Best3 from "@/Assets/Image/best3.png";
 import LeftIcon from "@/Assets//Icon/Arrow";
 
-export default function Home() {
+export default function bestProject() {
   useEffect(() => {
     const stickySections = document.querySelectorAll(".sticky_wrap");
 
@@ -67,7 +67,7 @@ export default function Home() {
       <div className="scroll_container h-[400vh]">
         <div className="sticky_wrap sticky top-0 h-screen overflow-hidden">
           <div className="horizontal_scroll absolute top-0 h-full w-[400vw] flex justify-between">
-            <div className="scroll_contents w-screen h-full bg-red-500 flex items-start">
+            <div className="scroll_contents w-screen h-full bg-[#DA4641] flex items-start">
               <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
                 <Image src={Best1} alt="best1" className=" " />
                 <div className="absolute top-[70%] left-0 transform -translate-y-[45%] flex flex-row   gap-6 pl-4">
@@ -88,7 +88,27 @@ export default function Home() {
                 </div>
               </div>{" "}
             </div>
-            <div className="scroll_contents w-screen h-full bg-yellow-500"></div>
+            <div className="scroll_contents w-screen h-full bg-[#DA4641]">
+              <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
+                <Image src={Best1_2} alt="best1" className=" " />
+                <div className="absolute top-[70%] left-0 transform -translate-y-[45%] flex flex-row   gap-6 pl-4">
+                  <Button
+                    variant="light"
+                    className="text-white hover:text-blue-500"
+                    startContent={<LeftIcon />}
+                  >
+                    View Study Case
+                  </Button>
+                  <Button
+                    variant="light"
+                    className="text-white hover:text-blue-500"
+                    startContent={<LeftIcon />}
+                  >
+                    View Website
+                  </Button>
+                </div>
+              </div>{" "}
+            </div>
             <div className="scroll_contents w-screen h-full bg-green-500"></div>
             <div className="scroll_contents w-screen h-full bg-blue-500 flex items-end justify-end">
               <h2 className="text-white text-4xl mr-5 mb-5">Goodbye</h2>

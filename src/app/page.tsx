@@ -2,18 +2,16 @@
 import Spline from "@splinetool/react-spline";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
-import Project from "@/components/project";
 import Experience from "@/components/experience";
+import BestProject from "@/components/bestProject";
 import Aboutme from "@/Assets/Image/Aboutme.png";
 import DownloadIcon from "@/Assets/Icon/Download";
 import LeftIcon from "@/Assets//Icon/Arrow";
 import Gmail from "@/Assets/Icon/Gmail";
 import Planet from "@/Assets/Image/planet.png";
-import Planet1 from "@/Assets/Image/Planet-9.png";
-import Planet2 from "@/Assets/Image/Planet-8.png";
-import Planet3 from "@/Assets/Image/Planet-13.png";
 import Comet from "@/Assets/Image/Comet.png";
 import Best1 from "@/Assets/Image/best1.png";
+import Best1_2 from "@/Assets/Image/best1.2.png";
 import Best2 from "@/Assets/Image/best2.png";
 import Best3 from "@/Assets/Image/best3.png";
 import { AiFillInstagram } from "react-icons/ai";
@@ -21,14 +19,20 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 // import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { useRouter } from "next/router";
+
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination, Mousewheel } from "swiper/modules";
 
 export default function Home() {
-  // const router = useRouter();
-
-  // const Project = () => {
-  //   router.push("/project"); // Mengarahkan pengguna ke halaman /project
-  // };
+  // Func Swiper
 
   return (
     <div className="w-full h-full gap-10 mb-6 px-4 mx-auto">
@@ -170,7 +174,59 @@ export default function Home() {
       {/* End Experience */}
 
       {/* Selected Project */}
-      <div className="py-32 max-w-6xl mx-auto">
+      <BestProject />
+      {/* <div className="py-32 max-w-6xl mx-auto">
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          mousewheel={true} // Mengaktifkan scroll pada layout swiper
+          modules={[Pagination, Mousewheel]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
+              <Image src={Best1} alt="best1" className=" " />
+              <div className="absolute top-[70%] left-0 transform -translate-y-[45%] flex flex-row   gap-6 pl-4">
+                <Button
+                  variant="light"
+                  className="text-white hover:text-blue-500"
+                  startContent={<LeftIcon />}
+                >
+                  View Study Case
+                </Button>
+                <Button
+                  variant="light"
+                  className="text-white hover:text-blue-500"
+                  startContent={<LeftIcon />}
+                >
+                  View Website
+                </Button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
+              <Image src={Best1_2} alt="best1" className=" " />
+              <div className="absolute top-[70%] left-0 transform -translate-y-[45%] flex flex-row   gap-6 pl-4">
+                <Button
+                  variant="light"
+                  className="text-white hover:text-blue-500"
+                  startContent={<LeftIcon />}
+                >
+                  View Study Case
+                </Button>
+                <Button
+                  variant="light"
+                  className="text-white hover:text-blue-500"
+                  startContent={<LeftIcon />}
+                >
+                  View Website
+                </Button>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
         <div className=" justify-center mt-10 gap-2">
           <Image src={Comet} alt="planet" className="w-[44px] mx-auto" />
 
@@ -180,19 +236,63 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-6 mt-6 justify-center items-center sm:flex-cols-1 md:flex-cols-2 lg:flex-cols-3">
-          <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md">
+        <div className="flex flex-wrap gap-10 mt-6 justify-center items-center sm:flex-cols-1 md:flex-cols-2 lg:flex-cols-3">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
             <Image src={Best1} alt="best1" className=" " />
-            <div className="flex flex-row gap-6">
-              <div>link</div>
-              <div>View Website</div>
+            <div className="flex flex-row gap-6 mt-6">
+              <Button
+                variant="light"
+                className="text-white hover:text-blue-500"
+                startContent={<LeftIcon />}
+              >
+                View Study Case
+              </Button>
+              <Button
+                variant="light"
+                className="text-white hover:text-blue-500"
+                startContent={<LeftIcon />}
+              >
+                View Website
+              </Button>
             </div>
           </div>
-          <div className="w-full sm:w-full md:w-1/3 lg:w-full border-2 border-white rounded-md">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-full  rounded-md">
             <Image src={Best2} alt="best2" className=" " />
+            <div className="flex flex-row gap-6 mt-6">
+              <Button
+                variant="light"
+                className="text-white hover:text-blue-500"
+                startContent={<LeftIcon />}
+              >
+                View Study Case
+              </Button>
+              <Button
+                variant="light"
+                className="text-white hover:text-blue-500"
+                startContent={<LeftIcon />}
+              >
+                View Website
+              </Button>
+            </div>
           </div>
-          <div className="w-full sm:w-full md:w-1/3 lg:w-full border-2 border-white rounded-md">
+          <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md">
             <Image src={Best3} alt="best3" className=" " />
+            <div className="flex flex-row gap-6 mt-6">
+              <Button
+                variant="light"
+                className="text-white hover:text-blue-500"
+                startContent={<LeftIcon />}
+              >
+                View Study Case
+              </Button>
+              <Button
+                variant="light"
+                className="text-white hover:text-blue-500"
+                startContent={<LeftIcon />}
+              >
+                View Website
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -200,13 +300,13 @@ export default function Home() {
           <Button
             variant="light"
             onClick={() => (window.location.href = "/project")} // Langsung menggunakan window.location
-            className="text-white border-[#d1d1d1]"
+            className="text-white hover:text-blue-500"
           >
             See All Project
             <LeftIcon />
           </Button>
         </div>
-      </div>
+      </div> */}
 
       {/* End Selected Project */}
 
