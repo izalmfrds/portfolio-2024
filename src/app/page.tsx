@@ -100,7 +100,7 @@ export default function Home() {
         />
 
         <div className="pt-10 text-center">
-          <p className="text-6xl w-full font-tomorrow font-medium">
+          <p className="text-5xl w-full font-tomorrow font-medium">
             Crafting Design <br></br> with User Experience Research
           </p>
           <p className="text-base mt-4 text-[#d1d1d1]">
@@ -171,6 +171,7 @@ export default function Home() {
 
       {/* Experience */}
       <Experience />
+
       {/* End Experience */}
 
       {/* Selected Project */}

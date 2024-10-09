@@ -46,9 +46,9 @@ export default function BestProject() {
       <div className="scroll_container h-[400vh]">
         <div className="sticky_wrap sticky top-0 h-screen overflow-hidden">
           <div className="horizontal_scroll absolute top-0 h-full w-[400vw] flex justify-between">
-            <div className="scroll_contents w-screen h-full bg-[#DA4641] flex items-start">
+            <div className="scroll_contents w-screen h-full bg-[#DA4641]">
               <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md relative">
-                <Image src={Best1} alt="best1" className="w-full h-auto" />
+                <Image src={Best1} alt="best1_2" className="w-full h-auto" />
                 <div className="absolute top-[70%] left-[3.5%] transform -translate-y-[45%] flex flex-row gap-6 pl-4">
                   <Button
                     variant="light"
