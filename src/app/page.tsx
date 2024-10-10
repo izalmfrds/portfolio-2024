@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import Experience from "@/components/experience";
 import BestProject from "@/components/bestProject";
+import BestProjectMob from "@/components/bestProjectMob";
 import Aboutme from "@/Assets/Image/Aboutme.png";
 import DownloadIcon from "@/Assets/Icon/Download";
 import LeftIcon from "@/Assets//Icon/Arrow";
@@ -171,6 +172,7 @@ export default function Home() {
 
       {/* Experience */}
       <Experience />
+      <BestProjectMob />
 
       {/* End Experience */}
 

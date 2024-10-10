@@ -61,6 +61,20 @@ body {
   object-fit: cover;
 }
 
-.swiper-v {
-  background: #eee;
+/* Responsiveness for slides */
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+.flex-shrink-0 {
+  min-width: 0;
+  flex: 1 1 auto;
 }
