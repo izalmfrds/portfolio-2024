@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image"; // Import Next.js Image component
 import { Button } from "@nextui-org/button";
-import Best1 from "@/Assets/Image/Digits Mockup.png"; // Local image
+import Best1 from "@/Assets/Image/DigitsPortalMobile.png"; // Local image
 import Best2 from "@/Assets/Image/Digits Mockup.png";
 import Best3 from "@/Assets/Image/Digits Mockup.png";
 import LogoTS from "@/Assets/Image/TelkomFoundationLogo.png";
@@ -25,7 +25,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="h-screen bg-slate-500">
+    <div className="h-screen bg-slate-500 p-4 gap-4">
       <div className="flex flex-col items-center">
         <div>
           <Image

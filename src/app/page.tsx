@@ -3,6 +3,7 @@ import Spline from "@splinetool/react-spline";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import Experience from "@/components/experience";
+import MaterialYou from "@/components/MaterialYou";
 import BestProject from "@/components/bestProject";
 import BestProjectMob from "@/components/bestProjectMob";
 import Aboutme from "@/Assets/Image/Aboutme.png";
@@ -31,6 +32,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination, Mousewheel } from "swiper/modules";
+import { Card } from "@nextui-org/card";
 
 export default function Home() {
   // Func Swiper
@@ -172,12 +174,30 @@ export default function Home() {
 
       {/* Experience */}
       <Experience />
-      <BestProjectMob />
-
       {/* End Experience */}
 
       {/* Selected Project */}
-      <BestProject />
+      <div className="w-full max-w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-10 ">
+        <p className="tomo text-4xl font-semibold pb-10 text-center">
+          Best Project
+        </p>
+        <Card className="flex flex-row gap-10 p-10">
+          <MaterialYou />
+          <div className="w-[45%]">
+            <p className="tomo text-4xl">Digital Telkom Schools</p>
+            <p className="py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              necessitatibus laboriosam, quidem, ducimus totam porro iusto
+              minima ullam illum debitis aliquam, autem beatae quos accusantium
+              neque est explicabo eos harum.
+            </p>
+            <div className="flex flex-row gap-2">
+              <Button>Click Me</Button>
+              <Button>Click Me</Button>
+            </div>
+          </div>
+        </Card>
+      </div>
       {/* <div className="py-32 max-w-6xl mx-auto">
         <Swiper
           pagination={{
