@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import Experience from "@/components/experience";
 import MaterialYou from "@/components/MaterialYou";
+import DynamicMaterialYou from "@/components/DynamicMaterialYou";
 import BestProject from "@/components/bestProject";
 import BestProjectMob from "@/components/bestProjectMob";
 import Aboutme from "@/Assets/Image/Aboutme.png";
@@ -177,159 +178,29 @@ export default function Home() {
       {/* End Experience */}
 
       {/* Selected Project */}
-      <div className="w-full max-w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-10 ">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 ">
         <p className="tomo text-4xl font-semibold pb-10 text-center">
           Best Project
         </p>
-        <Card className="flex flex-row gap-10 p-10">
-          <MaterialYou />
-          <div className="w-[45%]">
-            <p className="tomo text-4xl">Digital Telkom Schools</p>
-            <p className="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              necessitatibus laboriosam, quidem, ducimus totam porro iusto
-              minima ullam illum debitis aliquam, autem beatae quos accusantium
-              neque est explicabo eos harum.
-            </p>
-            <div className="flex flex-row gap-2">
-              <Button>Click Me</Button>
-              <Button>Click Me</Button>
+        <div className="flex flex-col gap-10">
+          <DynamicMaterialYou />
+          <Card className="flex flex-col md:flex-row gap-10 p-10">
+            <div className="md:w-[45%]">
+              <p className="tomo text-4xl">Baitul Adab Islamic Shools</p>
+              <p className="py-4">
+                DigiTS is an application to manage all levels of Telkom schools
+                from registration to becoming a school alumni, I am a UI/UX
+                designer in creating the DigiTS system.
+              </p>
+              <div className="flex flex-row gap-2">
+                <Button>Click Me</Button>
+                <Button>Click Me</Button>
+              </div>
             </div>
-          </div>
-        </Card>
+            <MaterialYou />
+          </Card>
+        </div>
       </div>
-      {/* <div className="py-32 max-w-6xl mx-auto">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          mousewheel={true} // Mengaktifkan scroll pada layout swiper
-          modules={[Pagination, Mousewheel]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
-              <Image src={Best1} alt="best1" className=" " />
-              <div className="absolute top-[70%] left-0 transform -translate-y-[45%] flex flex-row   gap-6 pl-4">
-                <Button
-                  variant="light"
-                  className="text-white hover:text-blue-500"
-                  startContent={<LeftIcon />}
-                >
-                  View Study Case
-                </Button>
-                <Button
-                  variant="light"
-                  className="text-white hover:text-blue-500"
-                  startContent={<LeftIcon />}
-                >
-                  View Website
-                </Button>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
-              <Image src={Best1_2} alt="best1" className=" " />
-              <div className="absolute top-[70%] left-0 transform -translate-y-[45%] flex flex-row   gap-6 pl-4">
-                <Button
-                  variant="light"
-                  className="text-white hover:text-blue-500"
-                  startContent={<LeftIcon />}
-                >
-                  View Study Case
-                </Button>
-                <Button
-                  variant="light"
-                  className="text-white hover:text-blue-500"
-                  startContent={<LeftIcon />}
-                >
-                  View Website
-                </Button>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-        <div className=" justify-center mt-10 gap-2">
-          <Image src={Comet} alt="planet" className="w-[44px] mx-auto" />
-
-          <p className="text-medium font-tomorrow text-center ">Check out my</p>
-          <p className="text-4xl font-semibold font-tomorrow text-center">
-            Best Project
-          </p>
-        </div>
-
-        <div className="flex flex-wrap gap-10 mt-6 justify-center items-center sm:flex-cols-1 md:flex-cols-2 lg:flex-cols-3">
-          <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md ">
-            <Image src={Best1} alt="best1" className=" " />
-            <div className="flex flex-row gap-6 mt-6">
-              <Button
-                variant="light"
-                className="text-white hover:text-blue-500"
-                startContent={<LeftIcon />}
-              >
-                View Study Case
-              </Button>
-              <Button
-                variant="light"
-                className="text-white hover:text-blue-500"
-                startContent={<LeftIcon />}
-              >
-                View Website
-              </Button>
-            </div>
-          </div>
-          <div className="w-full sm:w-full md:w-1/3 lg:w-full  rounded-md">
-            <Image src={Best2} alt="best2" className=" " />
-            <div className="flex flex-row gap-6 mt-6">
-              <Button
-                variant="light"
-                className="text-white hover:text-blue-500"
-                startContent={<LeftIcon />}
-              >
-                View Study Case
-              </Button>
-              <Button
-                variant="light"
-                className="text-white hover:text-blue-500"
-                startContent={<LeftIcon />}
-              >
-                View Website
-              </Button>
-            </div>
-          </div>
-          <div className="w-full sm:w-full md:w-1/3 lg:w-full rounded-md">
-            <Image src={Best3} alt="best3" className=" " />
-            <div className="flex flex-row gap-6 mt-6">
-              <Button
-                variant="light"
-                className="text-white hover:text-blue-500"
-                startContent={<LeftIcon />}
-              >
-                View Study Case
-              </Button>
-              <Button
-                variant="light"
-                className="text-white hover:text-blue-500"
-                startContent={<LeftIcon />}
-              >
-                View Website
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex gap-4 mt-6 justify-center">
-          <Button
-            variant="light"
-            onClick={() => (window.location.href = "/project")} // Langsung menggunakan window.location
-            className="text-white hover:text-blue-500"
-          >
-            See All Project
-            <LeftIcon />
-          </Button>
-        </div>
-      </div> */}
 
       {/* End Selected Project */}
 

@@ -33,12 +33,18 @@ export default function Home() {
           return (
             <div
               key={actualIndex}
-              className={`relative transition-all duration-500 cubic-bezier(0.25, 1, 0.5, 1) ${
+              className={`relative transition-all duration-700 ease-in ${
                 activeIndex === actualIndex
-                  ? "w-full scale-100"
-                  : "w-40 scale-90"
+                  ? "w-full scale-100 opacity-100"
+                  : "w-40 scale-90 opacity-70"
               } h-64 bg-gray-100 overflow-hidden cursor-pointer rounded-xl`}
               onClick={() => handleCardClick(actualIndex)}
+              style={{
+                transitionTimingFunction:
+                  activeIndex === actualIndex
+                    ? "cubic-bezier(0.25, 1, 0.5, 1)"
+                    : "ease-in-out",
+              }}
             >
               <Image
                 src={image.src}
