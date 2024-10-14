@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { Card } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
-import Portal from "@/Assets/Image/best1.png";
-import Registrasi from "@/Assets/Image/best1.2.png";
-import Kurikulum from "@/Assets/Image/best1_3.png";
-import Akademik from "@/Assets/Image/best1_4.png";
+import Portal from "@/Assets/Image/portal.png";
+import Registrasi from "@/Assets/Image/regis.png";
+import Kurikulum from "@/Assets/Image/kurikulum.png";
+import Akademik from "@/Assets/Image/akademik.png";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,7 +16,6 @@ export default function Home() {
     { src: Akademik.src, alt: "Bais Mockup 4" },
   ];
 
-  // Link tujuan untuk setiap gambar
   const buttonLinks = [
     {
       link1: "https://dev-digits.telkomschools.sch.id/",
@@ -30,15 +29,18 @@ export default function Home() {
     { link1: "/akademik", link2: "/akademik/info" },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0); // Mulai dari gambar pertama
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleCardClick = (index: number) => {
     setActiveIndex(index);
   };
 
   const getDisplayedImages = () => {
-    const start = Math.max(0, activeIndex - 1);
-    return images.slice(start, start + 3);
+    const imagesToShow = [];
+    for (let i = 0; i < 3; i++) {
+      imagesToShow.push(images[(activeIndex + i) % images.length]);
+    }
+    return imagesToShow;
   };
 
   return (
@@ -47,13 +49,12 @@ export default function Home() {
         <div className="CardOpen w-full flex flex-row gap-4 justify-center">
           {getDisplayedImages().map((image, index) => {
             const actualIndex = index + Math.max(0, activeIndex - 1);
+            const isActive = activeIndex === actualIndex;
             return (
               <div
                 key={actualIndex}
                 className={`relative transition-all duration-500 cubic-bezier(0.25, 1, 0.5, 1) ${
-                  activeIndex === actualIndex
-                    ? "w-full scale-100"
-                    : "w-40 scale-90"
+                  isActive ? "w-full scale-100" : "w-40 scale-90"
                 } h-64 bg-gray-100 overflow-hidden cursor-pointer rounded-xl`}
                 onClick={() => handleCardClick(actualIndex)}
               >
@@ -64,6 +65,13 @@ export default function Home() {
                   objectFit="cover"
                   className="object-cover"
                 />
+                {/* Layer hitam dengan efek hover */}
+                {!isActive && (
+                  <div
+                    className="absolute inset-0 bg-black opacity-50 hover:opacity-0 transition-opacity duration-300"
+                    // Layer hitam ini hilang saat di hover dengan efek transisi
+                  ></div>
+                )}
               </div>
             );
           })}
@@ -77,11 +85,14 @@ export default function Home() {
           creating the DigiTS system.
         </p>
         <div className="flex flex-row gap-2">
-          <Button as="a" href={buttonLinks[activeIndex].link1}>
+          <Button
+            as="a"
+            href={
+              buttonLinks[activeIndex]?.link1 ||
+              "https://dev-digits.telkomschools.sch.id/"
+            }
+          >
             View Website
-          </Button>
-          <Button as="a" href={buttonLinks[activeIndex].link2}>
-            View Case Study
           </Button>
         </div>
       </div>

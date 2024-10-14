@@ -1,9 +1,6 @@
 const { nextui } = require("@nextui-org/react");
 
 module.exports = {
-  images: {
-    domains: ["cdn.dribbble.com"], // Tambahkan domain yang diizinkan di sini
-  },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
