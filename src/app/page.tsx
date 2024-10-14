@@ -39,7 +39,7 @@ export default function Home() {
   // Func Swiper
 
   return (
-    <div className="w-full h-full gap-10 mb-6 px-4 mx-auto">
+    <div className="w-full h-full gap-10 mb-6  mx-auto no-overflow">
       {/* Hero */}
       <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 ">
         <div
@@ -95,13 +95,33 @@ export default function Home() {
                 transform: scale(2);
               }
             }
+
+            /* Media query for small screens */
+            @media (max-width: 640px) {
+              .pulse {
+                width: 75%; /* Reduce width to 75% on small screens */
+                height: 75%; /* Reduce height to 75% on small screens */
+                top: 12.5%; /* Center the pulse vertically */
+                left: 12.5%; /* Center the pulse horizontally */
+              }
+            }
+            @media (max-width: 360px) {
+              .pulse {
+                width: 65%; /* Reduce width to 75% on small screens */
+                height: 65%; /* Reduce height to 75% on small screens */
+                top: 12.5%; /* Center the pulse vertically */
+                left: 12.5%; /* Center the pulse horizontally */
+              }
+            }
           `}</style>
         </div>
 
-        <Spline
-          className="h-screen absolute content-center place-items-center top-48  flex justify-center items-center"
-          scene="https://prod.spline.design/Ut6-u4zKMonMrzN2/scene.splinecode"
-        />
+        <div className="spline-wrapper">
+          <Spline
+            className="h-screen absolute content-center place-items-center top-48 flex justify-center items-center"
+            scene="https://prod.spline.design/Ut6-u4zKMonMrzN2/scene.splinecode"
+          />
+        </div>
 
         <div className="pt-10 text-center">
           <p className="text-5xl w-full font-tomorrow font-medium">
