@@ -198,22 +198,22 @@ export default function Home() {
       {/* End Experience */}
 
       {/* Selected Project */}
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 ">
+      <div className="w-full max-w-6xl mx-auto">
         <p className="tomo text-4xl font-semibold pb-10 text-center">
           Best Project
         </p>
         <div className="flex flex-col gap-10">
           <DynamicMaterialYou />
-          <Card className="flex flex-col md:flex-row gap-10 p-10">
+          <Card className="flex flex-col md:flex-row gap-10">
             <div className="md:w-[45%]">
               <p className="tomo text-4xl">Baitul Adab Islamic Shools</p>
-              <p className="py-4">
+              <p className="tomo py-4">
                 DigiTS is an application to manage all levels of Telkom schools
                 from registration to becoming a school alumni, I am a UI/UX
                 designer in creating the DigiTS system.
               </p>
               <div className="flex flex-row gap-2">
-                <Button>Click Me</Button>
+                <Button className="tomo">Click Me</Button>
                 <Button>Click Me</Button>
               </div>
             </div>

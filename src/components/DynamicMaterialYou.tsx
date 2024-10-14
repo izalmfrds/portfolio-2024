@@ -44,7 +44,7 @@ export default function Home() {
   };
 
   return (
-    <Card className="flex flex-col md:flex-row gap-10 p-10">
+    <Card className="flex flex-col md:flex-row gap-10 p-6">
       <div className="container mx-auto overflow-hidden">
         <div className="CardOpen w-full flex flex-row gap-4 justify-center">
           {getDisplayedImages().map((image, index) => {
@@ -54,7 +54,7 @@ export default function Home() {
               <div
                 key={actualIndex}
                 className={`relative transition-all duration-500 cubic-bezier(0.25, 1, 0.5, 1) ${
-                  isActive ? "w-full scale-100" : "w-40 scale-90"
+                  isActive ? "w-full scale-100" : "w-40 scale-80"
                 } h-64 bg-gray-100 overflow-hidden cursor-pointer rounded-xl`}
                 onClick={() => handleCardClick(actualIndex)}
               >
