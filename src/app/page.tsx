@@ -125,12 +125,12 @@ export default function Home() {
         </div>
 
         <div className="pt-10 text-center">
-          <p className="text-5xl w-full font-tomorrow font-medium">
-            Crafting Design <br></br> with User Experience Research
+          <p className="text-2xl md:text-5xl lg:text-6xl w-full font-tomorrow font-medium">
+            Crafting Design <br /> with User Experience Research
           </p>
-          <p className="text-base mt-4 text-[#d1d1d1]">
+          <p className="text-sm md:text-base mt-4 text-[#d1d1d1]">
             This website contains details about my explorations, and my work
-            experience. <br></br> Hopefully it can give you the insight and
+            experience. <br /> Hopefully it can give you the insight and
             information you need!
           </p>
 

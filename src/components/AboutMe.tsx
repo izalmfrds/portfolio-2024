@@ -11,23 +11,18 @@ export default function AboutMe() {
           enthusiasm in software development. I work as a full-time UI/UX in the
           software development process. Here are the skills I have:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="w-full">
-            <Card className="h-full">
-              <CardHeader className="hover:bg-[#0068E2]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full h-full object-cover"
-                >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 min-h-[542px]">
+          <div className="w-full ">
+            <Card className=" relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
+              <CardHeader className=" h-full">
+                <video autoPlay loop muted className="absolute w-full h-full ">
                   <source
-                    src="https://ouch-cdn2.icons8.com/LqVCF4SYIPstICpCXZNovxJuNfXjjdzF1Bem_tlUef4/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NTQwLzM4YjE4ODZh/LTBlNzgtNDNiYi1i/NjNlLWFmYjk0OTgz/Y2RiZC53ZWJt.webm"
+                    src="https://ouch-cdn2.icons8.com/6HfJM9AteuBark53a_ZPGFfyhUyvgpPTIZfAo4UEZBY/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDg1Lzc0N2Y1NGVm/LTA0ZDItNDczNi1i/Y2IwLWNjMGM4ZjE1/ZDBjYi53ZWJt.webm"
                     type="video/webm"
                   />
                 </video>
               </CardHeader>
-              <CardBody>
+              <CardBody className="pt-[130px]">
                 <p className="text-xl md:text-2xl font-bold text-center pb-2">
                   UI/UX Designer
                 </p>
@@ -42,21 +37,16 @@ export default function AboutMe() {
             </Card>
           </div>
           <div className="w-full">
-            <Card className="h-full">
-              <CardHeader className="hover:bg-[#0068E2]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full h-full object-cover"
-                >
+            <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
+              <CardHeader className="">
+                <video autoPlay loop muted className="absolute w-full h-full ">
                   <source
                     src="https://ouch-cdn2.icons8.com/ItdIGgJQUNuRBi3WvMiyj7gP9enF8Bl9oLpczzmprJ0/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDg3L2Q5MDdkZmIz/LTRkNzEtNDdiOC04/ZjhlLWI4NmIzODY2/N2ZkZi53ZWJt.webm"
                     type="video/webm"
                   />
                 </video>
               </CardHeader>
-              <CardBody>
+              <CardBody className="pt-[130px]">
                 <p className="text-xl md:text-2xl font-bold text-center pb-2">
                   Project Manager
                 </p>
@@ -71,21 +61,16 @@ export default function AboutMe() {
             </Card>
           </div>
           <div className="w-full">
-            <Card className="h-full">
-              <CardHeader className="hover:bg-[#0068E2]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full h-full object-cover"
-                >
+            <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
+              <CardHeader className="">
+                <video autoPlay loop muted className="absolute w-full h-full ">
                   <source
-                    src="https://ouch-cdn2.icons8.com/tocBEnPe0doFuHA4PGdx-G4IANeZl0yAzuZsc4QSaWc/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/OTIyL2Y0MWRkY2Ex/LWUxNzctNDhjYy1h/ODc2LWY2MjZmOTVi/Njk5YS53ZWJt.webm"
+                    src="https://ouch-cdn2.icons8.com/c4pcbpitZLxCNCyp6wBDDEF5pHobseDkpWVHpffc2J8/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDM5L2YzODEyNTJk/LTI2ZWQtNDJhNS04/MWU3LTk2NDA2ZmUx/M2VlOC53ZWJt.webm"
                     type="video/webm"
                   />
                 </video>
               </CardHeader>
-              <CardBody>
+              <CardBody className="pt-[130px]">
                 <p className="text-xl md:text-2xl font-bold text-center pb-2">
                   Web Development
                 </p>
