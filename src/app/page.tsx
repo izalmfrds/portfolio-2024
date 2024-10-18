@@ -165,7 +165,9 @@ export default function Home() {
 
       {/* End Hero */}
       {/* About Me */}
-      <AboutMe />
+      <div className="max-w-6xl mx-auto">
+        <AboutMe />
+      </div>
       {/* End About Me */}
 
       {/* Selected Project */}
