@@ -1,6 +1,23 @@
 import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer"; // gunakan dari react-intersection-observer
 
 export default function AboutMe() {
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.4, // Animasi akan di-trigger saat elemen terlihat 20% di layar
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.6,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
+    threshold: 0.8,
+  });
+
+  const cardVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <div className="max-w-full mx-auto flex flex-col md:flex-row gap-4 min-h-screen text-center my-[50px] md:my-[100px] px-4 md:px-0">
       <div className="content-center space-y-4 my-auto z-50 mx-auto w-full pt-12 md:pt-0">
@@ -12,10 +29,16 @@ export default function AboutMe() {
           software development process. Here are the skills I have:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 min-h-[542px]">
-          <div className="w-full ">
-            <Card className=" relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
-              <CardHeader className=" h-full">
-                <video autoPlay loop muted className="absolute w-full h-full ">
+          <motion.div
+            ref={ref1}
+            variants={cardVariant}
+            initial="hidden"
+            animate={inView1 ? "visible" : "hidden"}
+            className="w-full"
+          >
+            <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
+              <CardHeader className="h-full">
+                <video autoPlay loop muted className="absolute w-full h-full">
                   <source
                     src="https://ouch-cdn2.icons8.com/6HfJM9AteuBark53a_ZPGFfyhUyvgpPTIZfAo4UEZBY/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDg1Lzc0N2Y1NGVm/LTA0ZDItNDczNi1i/Y2IwLWNjMGM4ZjE1/ZDBjYi53ZWJt.webm"
                     type="video/webm"
@@ -35,11 +58,18 @@ export default function AboutMe() {
                 </p>
               </CardBody>
             </Card>
-          </div>
-          <div className="w-full">
+          </motion.div>
+
+          <motion.div
+            ref={ref2}
+            variants={cardVariant}
+            initial="hidden"
+            animate={inView2 ? "visible" : "hidden"}
+            className="w-full"
+          >
             <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
               <CardHeader className="">
-                <video autoPlay loop muted className="absolute w-full h-full ">
+                <video autoPlay loop muted className="absolute w-full h-full">
                   <source
                     src="https://ouch-cdn2.icons8.com/ItdIGgJQUNuRBi3WvMiyj7gP9enF8Bl9oLpczzmprJ0/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDg3L2Q5MDdkZmIz/LTRkNzEtNDdiOC04/ZjhlLWI4NmIzODY2/N2ZkZi53ZWJt.webm"
                     type="video/webm"
@@ -59,11 +89,18 @@ export default function AboutMe() {
                 </p>
               </CardBody>
             </Card>
-          </div>
-          <div className="w-full">
+          </motion.div>
+
+          <motion.div
+            ref={ref3}
+            variants={cardVariant}
+            initial="hidden"
+            animate={inView3 ? "visible" : "hidden"}
+            className="w-full"
+          >
             <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
               <CardHeader className="">
-                <video autoPlay loop muted className="absolute w-full h-full ">
+                <video autoPlay loop muted className="absolute w-full h-full">
                   <source
                     src="https://ouch-cdn2.icons8.com/c4pcbpitZLxCNCyp6wBDDEF5pHobseDkpWVHpffc2J8/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDM5L2YzODEyNTJk/LTI2ZWQtNDJhNS04/MWU3LTk2NDA2ZmUx/M2VlOC53ZWJt.webm"
                     type="video/webm"
@@ -84,7 +121,7 @@ export default function AboutMe() {
                 </p>
               </CardBody>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
