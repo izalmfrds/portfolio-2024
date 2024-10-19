@@ -6,7 +6,10 @@ import DownloadIcon from "@/Assets/Icon/Download";
 
 export default function Hero() {
   return (
-    <div className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 ">
+    <div
+      id="hero"
+      className="h-[calc(100vh-100px)] rounded-3xl bg-gradient-to-t from-[#90c4ffde] from-4% via-[#0068E2] via-5% to-[#1c70d600] to-50%  relative z-50 "
+    >
       <div
         className="absolute flex items-center justify-center w-52 h-52 rounded-full top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         style={{

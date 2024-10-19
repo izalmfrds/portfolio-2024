@@ -19,7 +19,10 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="max-w-full mx-auto flex flex-col md:flex-row gap-4 min-h-screen text-center my-[50px] md:my-[100px] px-4 md:px-0">
+    <div
+      id="about"
+      className="max-w-full mx-auto flex flex-col md:flex-row gap-4 min-h-screen text-center my-[50px] md:my-[100px] px-4 md:px-0"
+    >
       <div className="content-center space-y-4 my-auto z-50 mx-auto w-full pt-12 md:pt-0">
         <p className="text-3xl md:text-4xl font-semibold pb-2">About Me</p>
         <p className="text-base md:text-xl text-[#d1d1d1]">

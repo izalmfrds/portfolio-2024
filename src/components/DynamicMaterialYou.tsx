@@ -44,7 +44,7 @@ export default function Home() {
   };
 
   return (
-    <Card className="flex flex-col md:flex-row gap-10 p-6">
+    <Card className="flex flex-col md:flex-row gap-10 p-6 ">
       <div className="container mx-auto overflow-hidden">
         <div className="CardOpen w-full flex flex-row gap-4 justify-center">
           {getDisplayedImages().map((image, index) => {
