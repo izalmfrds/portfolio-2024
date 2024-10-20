@@ -26,8 +26,15 @@ export default function NavMenu() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const LocomotiveScroll = require("locomotive-scroll");
-      setScroll(new LocomotiveScroll());
+      (async () => {
+        const LocomotiveScroll = (await import("locomotive-scroll")).default;
+        setScroll(
+          new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"), // Element yang di-scroll
+            smooth: true,
+          } as any) // Gunakan 'as any' untuk melewati pemeriksaan tipe
+        );
+      })();
     }
   }, []);
 
