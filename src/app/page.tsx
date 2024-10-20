@@ -19,7 +19,7 @@ export default function Home() {
   // Func Swiper
 
   return (
-    <div className="w-full h-full gap-10 mb-6  mx-auto no-overflow">
+    <div className="w-full h-full gap-10 mb-6 mx-auto no-overflow">
       {/* Hero */}
       <Hero />
       {/* End Hero */}

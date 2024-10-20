@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="dark">
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap ">
               <Nav />
               <div className="flex-1 w-full h-full ">{children}</div>
             </div>
