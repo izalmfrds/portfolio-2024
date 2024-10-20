@@ -3,8 +3,6 @@ const nextConfig = {
   images: {
     domains: ["cdn.dribbble.com"], // Tambahkan domain yang diizinkan di sini
   },
-};
-module.exports = {
   webpack: (config, { isServer }) => {
     // Modifikasi konfigurasi Webpack di sini
     if (!isServer) {
