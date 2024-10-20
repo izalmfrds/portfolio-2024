@@ -25,10 +25,10 @@ export default function NavMenu() {
   };
 
   useEffect(() => {
-    import("locomotive-scroll").then((locomotiveModule) => {
-      const locomotivescroll = new locomotiveModule.default();
-      setScroll(locomotivescroll);
-    });
+    if (typeof window !== "undefined") {
+      const LocomotiveScroll = require("locomotive-scroll");
+      setScroll(new LocomotiveScroll());
+    }
   }, []);
 
   useIsomorphicLayoutEffect(() => {
