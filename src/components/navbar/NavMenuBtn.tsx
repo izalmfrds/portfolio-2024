@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
-import useIsomorphicLayoutEffect from "@/hooks/UseIsomorphicLayoutEffect"
-import { cn } from "@/lib/utils"
-import gsap from "gsap"
-import { useRef } from "react"
-import MagneticEffect from "../providers/MagneticEffect"
+import useIsomorphicLayoutEffect from "@/hooks/UseIsomorphicLayoutEffect";
+import { cn } from "@/lib/utils";
+import gsap from "gsap";
+import { useRef } from "react";
+import MagneticEffect from "../providers/MagneticEffect";
 
 interface NavMenuBtnProps {
-  active: boolean
-  toggleHamburger: (status: boolean) => void
+  active: boolean;
+  toggleHamburger: (status: boolean) => void;
 }
 
 export default function NavMenuBtn({
   active,
   toggleHamburger,
 }: NavMenuBtnProps) {
-  const el = useRef<HTMLDivElement | null>(null)
+  const el = useRef<HTMLDivElement | null>(null);
 
   useIsomorphicLayoutEffect(() => {
-    if(!el.current) return console.log("el.current is null")
+    if (!el.current) return console.log("el.current is null");
     const context = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0.5 })
-      tl.to(el.current, { x: 0, duration: 2, ease: "power4.inOut" }, 0)
-    }, el)
+      const tl = gsap.timeline({ delay: 0.5 });
+      tl.to(el.current, { x: 0, duration: 2, ease: "power4.inOut" }, 0);
+    }, el);
 
-    return () => context.kill()
-  }, [])
+    return () => context.kill();
+  }, []);
 
   return (
     <div
@@ -64,5 +64,5 @@ export default function NavMenuBtn({
         </button>
       </MagneticEffect>
     </div>
-  )
+  );
 }
