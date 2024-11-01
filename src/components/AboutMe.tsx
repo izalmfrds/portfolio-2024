@@ -41,7 +41,12 @@ export default function AboutMe() {
           >
             <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
               <CardHeader className="h-full">
-                <video autoPlay loop muted className="absolute w-full h-full">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="absolute w-full h-full right-[8px]"
+                >
                   <source
                     src="https://ouch-cdn2.icons8.com/6HfJM9AteuBark53a_ZPGFfyhUyvgpPTIZfAo4UEZBY/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDg1Lzc0N2Y1NGVm/LTA0ZDItNDczNi1i/Y2IwLWNjMGM4ZjE1/ZDBjYi53ZWJt.webm"
                     type="video/webm"
@@ -72,7 +77,12 @@ export default function AboutMe() {
           >
             <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
               <CardHeader className="">
-                <video autoPlay loop muted className="absolute w-full h-full">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="absolute w-full h-full right-[8px]"
+                >
                   <source
                     src="https://ouch-cdn2.icons8.com/ItdIGgJQUNuRBi3WvMiyj7gP9enF8Bl9oLpczzmprJ0/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDg3L2Q5MDdkZmIz/LTRkNzEtNDdiOC04/ZjhlLWI4NmIzODY2/N2ZkZi53ZWJt.webm"
                     type="video/webm"
@@ -103,7 +113,12 @@ export default function AboutMe() {
           >
             <Card className="relative overflow-visible mt-[120px] hover:bg-[#0068E2] min-h-[420px]">
               <CardHeader className="">
-                <video autoPlay loop muted className="absolute w-full h-full">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="absolute w-full h-full right-[8px]"
+                >
                   <source
                     src="https://ouch-cdn2.icons8.com/c4pcbpitZLxCNCyp6wBDDEF5pHobseDkpWVHpffc2J8/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/NDM5L2YzODEyNTJk/LTI2ZWQtNDJhNS04/MWU3LTk2NDA2ZmUx/M2VlOC53ZWJt.webm"
                     type="video/webm"

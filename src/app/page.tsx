@@ -46,7 +46,7 @@ export default function Home() {
       <div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
         <div className="flex justify-center items-center flex-col my-5 self-start ">
           <motion.div
-            className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"
+            className="bg-gray-700 h-1 rounded-full mb-3 self-start"
             initial={{
               opacity: 0,
               x: -100,
@@ -62,7 +62,7 @@ export default function Home() {
             }}
           ></motion.div>
           <motion.div
-            className="bg-gray-700 w-28 h-1 rounded-full"
+            className="bg-gray-700  h-1 rounded-full"
             initial={{
               opacity: 0,
               x: 200,
