@@ -43,8 +43,9 @@ export default function Home() {
       {/* End Selected Project */}
 
       {/* Experience */}
-      <div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-        <div className="flex justify-center items-center flex-col my-5 self-start ">
+
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-start  flex-col my-5 self-start ">
           <motion.div
             className="bg-gray-700 h-1 rounded-full mb-3 self-start"
             initial={{
@@ -96,8 +97,6 @@ export default function Home() {
             Profesional Experienceee
           </motion.h1>
         </div>
-      </div>
-      <div className="max-w-6xl mx-auto">
         <Experience />
       </div>
       {/* End Experience */}
