@@ -99,8 +99,8 @@ export default function Home() {
       </div> */}
       <div className="max-w-6xl mx-auto">
         <div className="mt-16 flex flex-col justify-start items-center w-full pl-4 md:pl-2">
-          <div className="flex justify-center items-center flex-col my-5 self-start ">
-            <motion.div
+          {/* <div className="flex justify-center items-center flex-col my-5 self-start ">
+           <motion.div
               className="bg-gray-700 h-1 w-5 rounded-full mb-3 self-start"
               initial={{
                 opacity: 0,
@@ -131,7 +131,7 @@ export default function Home() {
 
                 type: "spring",
               }}
-            ></motion.div>
+            ></motion.div> 
             <motion.h1
               className="text-3xl font-bold mt-3"
               initial={{
@@ -150,8 +150,9 @@ export default function Home() {
             >
               Profesional Experienceee
             </motion.h1>
-          </div>
+          </div> */}
         </div>
+        <p className="tomo text-4xl ">Profesional Experience</p>
         <Experience />
       </div>
       {/* End Experience */}

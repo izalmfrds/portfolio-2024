@@ -99,7 +99,7 @@ function experience() {
     //   </div>
     // </div>
 
-    <section className="grid gap-8 md:gap-12 ">
+    <section className="grid gap-8 md:gap-12 px-4">
       <div className="relative after:absolute after:inset-y-2 after:w-1 after:bg-gray-700 after:left-[-4px] md:after:left-1 lg:after:left-2 xl:after:left-3 grid gap-8 md:gap-12 pl-6 md:pl-8 ">
         <div className="grid gap-4 relative">
           <div className="aspect-square w-5 bg-white rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
