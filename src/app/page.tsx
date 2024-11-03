@@ -152,7 +152,9 @@ export default function Home() {
             </motion.h1>
           </div> */}
         </div>
-        <p className="tomo text-4xl ">Profesional Experience</p>
+        <p className="tomo text-4xl mb-4 font-semibold">
+          Profesional Experience
+        </p>
         <Experience />
       </div>
       {/* End Experience */}
