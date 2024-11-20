@@ -7,6 +7,7 @@ import MaterialYou from "@/components/MaterialYou";
 import Nav from "@/components/navbar/Nav";
 import DynamicMaterialYou from "@/components/DynamicMaterialYou";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -31,12 +32,18 @@ export default function Home() {
       {/* End About Me */}
 
       {/* Selected Project */}
-      <div id="project" className="w-full max-w-6xl mx-auto">
+      <div id="project" className="w-full  max-w-6xl mx-auto">
         <p className="tomo text-4xl font-semibold pb-10 text-center">
           Best Project
         </p>
-        <div className="flex flex-col gap-10">
-          <DynamicMaterialYou />
+        <div className="flex gap-10 justify-center">
+          <Image
+            src="https://cdn.dribbble.com/userupload/6066594/file/original-13fb0d5cee651027e606a0386b70182f.png?resize=640x480&vertical=center"
+            width={700}
+            height={400}
+            alt="Picture of the author"
+            className="rounded-xl"
+          />
         </div>
       </div>
 
