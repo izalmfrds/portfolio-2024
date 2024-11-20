@@ -51,113 +51,113 @@ export default function Home() {
 
       {/* Experience */}
       {/* <div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-        <div className="flex justify-center items-center flex-col my-5 self-start ">
-          <motion.div
-            className="bg-gray-700 h-1 rounded-full mb-3 self-start"
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              delay: 0.5,
+      <div className="flex justify-center items-center flex-col my-5 self-start ">
+        <motion.div
+          className="bg-gray-700 h-1 rounded-full mb-3 self-start"
+          initial={{
+            opacity: 0,
+            x: -100,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            delay: 0.5,
 
-              type: "spring",
-            }}
-          ></motion.div>
-          <motion.div
-            className="bg-gray-700  h-1 rounded-full"
-            initial={{
-              opacity: 0,
-              x: 200,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: -50,
-            }}
-            transition={{
-              delay: 0.5,
+            type: "spring",
+          }}
+        ></motion.div>
+        <motion.div
+          className="bg-gray-700  h-1 rounded-full"
+          initial={{
+            opacity: 0,
+            x: 200,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: -50,
+          }}
+          transition={{
+            delay: 0.5,
 
-              type: "spring",
-            }}
-          ></motion.div>
-          <motion.h1
-            className="text-3xl font-bold mt-3"
-            initial={{
-              opacity: 0,
-              x: -200,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              delay: 0.7,
+            type: "spring",
+          }}
+        ></motion.div>
+        <motion.h1
+          className="text-3xl font-bold mt-3"
+          initial={{
+            opacity: 0,
+            x: -200,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            delay: 0.7,
 
-              type: "spring",
-            }}
-          >
-            Profesional Experienceee
-          </motion.h1>
-        </div>
-      </div> */}
+            type: "spring",
+          }}
+        >
+          Profesional Experienceee
+        </motion.h1>
+      </div>
+    </div> */}
       <div className="max-w-6xl mx-auto">
         <div className="mt-16 flex flex-col justify-start items-center w-full pl-4 md:pl-2">
           {/* <div className="flex justify-center items-center flex-col my-5 self-start ">
-           <motion.div
-              className="bg-gray-700 h-1 w-5 rounded-full mb-3 self-start"
-              initial={{
-                opacity: 0,
-                x: -100,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              transition={{
-                delay: 0.5,
+     <motion.div
+        className="bg-gray-700 h-1 w-5 rounded-full mb-3 self-start"
+        initial={{
+          opacity: 0,
+          x: -100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          delay: 0.5,
 
-                type: "spring",
-              }}
-            ></motion.div>
-            <motion.div
-              className="bg-gray-700 w-5 h-1 rounded-full"
-              initial={{
-                opacity: 0,
-                x: 200,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: -50,
-              }}
-              transition={{
-                delay: 0.5,
+          type: "spring",
+        }}
+      ></motion.div>
+      <motion.div
+        className="bg-gray-700 w-5 h-1 rounded-full"
+        initial={{
+          opacity: 0,
+          x: 200,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: -50,
+        }}
+        transition={{
+          delay: 0.5,
 
-                type: "spring",
-              }}
-            ></motion.div> 
-            <motion.h1
-              className="text-3xl font-bold mt-3"
-              initial={{
-                opacity: 0,
-                x: -200,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              transition={{
-                delay: 0.7,
+          type: "spring",
+        }}
+      ></motion.div>
+      <motion.h1
+        className="text-3xl font-bold mt-3"
+        initial={{
+          opacity: 0,
+          x: -200,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          delay: 0.7,
 
-                type: "spring",
-              }}
-            >
-              Profesional Experienceee
-            </motion.h1>
-          </div> */}
+          type: "spring",
+        }}
+      >
+        Profesional Experienceee
+      </motion.h1>
+    </div> */}
         </div>
         <p className="tomo text-4xl mb-4 font-semibold">
           Profesional Experience
