@@ -21,6 +21,19 @@ const nextConfig = {
 
     return config;
   },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Referrer-Policy",
+            value: "no-referrer-when-downgrade", // Atau gunakan value lain yang diinginkan
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -8,6 +8,7 @@ import Nav from "@/components/navbar/Nav";
 import DynamicMaterialYou from "@/components/DynamicMaterialYou";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react";
 
 // import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -17,10 +18,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function Home() {
-  // Func Swiper
-
   return (
     <div className="w-full h-full gap-10 mb-6 mx-auto no-overflow">
+      <Analytics />
       {/* Hero */}
       <Hero />
       {/* End Hero */}
