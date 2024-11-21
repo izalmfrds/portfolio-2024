@@ -8,7 +8,6 @@ import Nav from "@/components/navbar/Nav";
 import DynamicMaterialYou from "@/components/DynamicMaterialYou";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Analytics } from "@vercel/analytics/react";
 
 // import Particle from "@/components/particles";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -16,11 +15,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import VerticalSwiper from "@/components/swiper/VerticalSwiper";
 
 export default function Home() {
   return (
     <div className="w-full h-full gap-10 mb-6 mx-auto no-overflow">
-      <Analytics />
       {/* Hero */}
       <Hero />
       {/* End Hero */}
@@ -36,15 +35,15 @@ export default function Home() {
         <p className="tomo text-4xl font-semibold pb-10 text-center">
           Best Project
         </p>
-        <div className="flex gap-10 justify-center">
-          <Image
-            src="https://cdn.dribbble.com/userupload/6066594/file/original-13fb0d5cee651027e606a0386b70182f.png?resize=640x480&vertical=center"
-            width={700}
-            height={400}
-            alt="Picture of the author"
-            className="rounded-xl"
+        <>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
           />
-        </div>
+          <div style={{ width: "100%", height: "100vh", background: "#eee" }}>
+            <VerticalSwiper />
+          </div>
+        </>
       </div>
 
       {/* End Selected Project */}
