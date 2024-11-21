@@ -31,7 +31,7 @@ export default function Home() {
       {/* End About Me */}
 
       {/* Selected Project */}
-      <div id="project" className="w-full  max-w-6xl mx-auto">
+      <div id="projects" className="w-full  max-w-6xl mx-auto">
         <p className="tomo text-4xl font-semibold pb-10 text-center">
           Best Project
         </p>
@@ -40,7 +40,7 @@ export default function Home() {
             name="viewport"
             content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
           />
-          <div style={{ width: "100%", height: "100vh", background: "#eee" }}>
+          <div className="w-full h-[100vh]">
             <VerticalSwiper />
           </div>
         </>
