@@ -16,6 +16,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "swiper/css";
 import "swiper/css/pagination";
 import VerticalSwiper from "@/components/swiper/VerticalSwiper";
+import HorizontalSwiper from "@/components/swiper/HorizontalSwiper";
 
 export default function Home() {
   return (
@@ -40,8 +41,9 @@ export default function Home() {
             name="viewport"
             content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
           />
-          <div className="w-full h-[100vh]">
-            <VerticalSwiper />
+          <div className="w-full">
+            {/* <VerticalSwiper /> */}
+            <HorizontalSwiper />
           </div>
         </>
       </div>
@@ -168,6 +170,7 @@ export default function Home() {
       {/* Contact */}
       <Contact />
       {/* <Particle /> */}
+
       <SpeedInsights />
     </div>
   );
